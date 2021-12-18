@@ -1,10 +1,10 @@
 --Ultima Vez Testado 18/12/2021
-local TeleportTime = 2 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
+local TeleportTime = 0.5 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
 local TeleportOrb = true --! True = Ira Pegar As Orb. ! False = Nao !--
-local TeleportTimeOrb = 2 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
-
+local TeleportTimeOrb = 0.5 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
+_G.Farm = true;
 --! ORB SCRIPT MAIN !--
-
+while _G.Farm == true do wait()
 if TeleportOrb == true then
 for i,v in pairs(game.Workspace.ActualMap:GetDescendants()) do
   if v:IsA("Folder") then
@@ -77,4 +77,5 @@ for i,v in pairs(game.Workspace.ActualMap:GetDescendants()) do
          end
       end
   end
+end
 end
