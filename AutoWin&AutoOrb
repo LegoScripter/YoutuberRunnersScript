@@ -1,0 +1,80 @@
+--Ultima Vez Testado 18/12/2021
+local TeleportTime = 2 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
+local TeleportOrb = true --! True = Ira Pegar As Orb. ! False = Nao !--
+local TeleportTimeOrb = 2 --! Nao Mude Se Nao Saber Oque Esta Fazendo !--
+
+--! ORB SCRIPT MAIN !--
+
+if TeleportOrb == true then
+for i,v in pairs(game.Workspace.ActualMap:GetDescendants()) do
+  if v:IsA("Folder") then
+      if v.Name == "Orbs" then
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+         if v:FindFirstChild("SeasonOrb") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.SeasonOrb.CFrame
+           wait(TeleportTimeOrb)
+         end
+      end
+   end
+end
+end
+
+--! AUTO WIN MAIN !--
+
+for i,v in pairs(game.Workspace.ActualMap:GetDescendants()) do
+  if v:IsA("Folder") then
+      if v.Name == "Checkpoints" then
+         if v:FindFirstChild("01") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v["01"].Touch.CFrame
+           wait(TeleportTime)
+         end
+         if v:FindFirstChild("02") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v["02"].Touch.CFrame
+           wait(TeleportTime)
+         end
+         if v:FindFirstChild("03") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v["03"].Touch.CFrame
+           wait(TeleportTime)
+         end
+         if v:FindFirstChild("04") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v["04"].Touch.CFrame
+           wait(TeleportTime)
+         end
+         if v:FindFirstChild("05") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v["05"].Touch.CFrame
+           wait(TeleportTime)
+         end
+         if v.Parent:FindFirstChild("Finish") then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.Finish.CFrame
+           wait(TeleportTime)
+         end
+      end
+  end
+end
